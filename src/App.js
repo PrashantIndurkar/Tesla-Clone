@@ -21,7 +21,7 @@ function App() {
             <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
             {isMenuOpen && <Menu />}
             <HeaderBlock />
-          </Route>
+            </Route>
         <Route exact path="/login">
           <Login />
         </Route>

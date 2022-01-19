@@ -2,6 +2,8 @@ import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
 import LanguageOutlinedIcon from '@material-ui/icons/LanguageOutlined'
 import ButtonPrimary from './ButtonPrimary';
+import './Login.css'
+import ButtonSecondary from './ButtonSecondary';
 
 function Login() {
     const [email, setEmail] = useState("");
@@ -24,11 +26,11 @@ function Login() {
             </div>
         </div>
         <div className="login__info">
-            <h1>Sing In</h1>
+            <h1> <b>Sing In</b></h1>
             <form className='login__form'>
             <label htmlFor="email">Email Address</label>
             <input type="email" id="email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
-            <label htmlFor="password">password</label>
+            <label htmlFor="password">Password</label>
             <input
             id='password'
             type='password'
@@ -37,6 +39,12 @@ function Login() {
           />
           <ButtonPrimary name='Sign In' type='submit' onChange="signIn"/>
             </form>
+            <div className="login__divider">
+                <hr /><span>OR</span><hr />
+            </div>
+            <Link to='/signup'>
+                <ButtonSecondary name='create account'  />
+            </Link>
         </div>
 
         </div>
