@@ -5,9 +5,6 @@ import LanguageOutlinedIcon from '@material-ui/icons/LanguageOutlined'
 import { useDispatch } from 'react-redux'
 import { auth } from './firebase'
 import { login } from './features/counter/userSlice'
-import ButtonPrimary from './ButtonPrimary'
-import ButtonSecondary from './ButtonSecondary'
-
 
 function Signup() {
   const [email, setEmail] = useState('')
