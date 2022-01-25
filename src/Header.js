@@ -29,7 +29,7 @@ function Header({ isMenuOpen, setIsMenuOpen }) {
           Shop
         </Link>
         <Link to='/login' className={isMenuOpen && 'header__link--hidden'}>
-          Tesla Account
+          Account
         </Link>
         <div
           className='header__menu'
